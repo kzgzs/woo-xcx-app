@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://v2.diandashop.com/?s=/DesignerLogin/index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+  
+  <title>登录页面设置</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" type="text/css" href="./登录页面设置_files/layui.css" media="all">
+<link rel="stylesheet" type="text/css" href="./登录页面设置_files/formSelects-v4.css" media="all">
+<link rel="stylesheet" type="text/css" href="./登录页面设置_files/admin.css" media="all">
+<link rel="stylesheet" type="text/css" href="./登录页面设置_files/font-awesome.min.css" media="all">
+<link rel="stylesheet" type="text/css" href="./登录页面设置_files/webuploader.css" media="all">
+<link rel="stylesheet" type="text/css" href="./登录页面设置_files/designer.css" media="all">
+<link rel="stylesheet" type="text/css" href="./登录页面设置_files/iconfont.css" media="all">
+  <style>
+  .tabBar{ width:340px; height:50px;background:#fff; border-top:1px #dedede solid;position:absolute;bottom:0}
+  .tabBar-tab{ width:100%; text-align:center; padding:0px; margin:0px; table-layout:fixed; }
+  .tabBar-tab td{ border:none;  margin:0px; text-align:center; padding:5px 0 1px 0;display: table-cell;cursor:pointer}
+  .tabBar-tab td img{ width:24px; height:24px; margin:0 auto; }
+  .tabBar-tab td span{ display:block; width:100%; height:18px; line-height:18px; font-size:12px; }
+  .type_css{margin-right:20px;padding:0 40px;border:1px solid #F0F0F0;border-radius: 8px;}
+
+
+  #editor-content{height: 800px}
+  .bg_div1{width:100%;height: 100%;overflow: hidden;}
+  .content_div1{width: 300px; margin: 0 auto;}
+  .title1{opacity: 1;font-size: 25px;font-weight: bold;line-height: 45px;text-align: left;margin-top: 40px;}
+  .subhead1{font-size: 14px;font-weight: 500;line-height: 20px;}
+  .card_div1{width: 100%;padding:20px;border-radius: 12px;margin-top: 20px;}
+  .tel1{width:100%;height:50px;border-radius: 50px;line-height: 50px;background-color: #F5F7FA;padding:0 20px;color:#CACACA;margin: 10px 0;margin-top: 15px;}
+  .code1{height: 50px;font-size: 12px;line-height: 50px;float: right;}
+  .btn1{width:100%;height:50px;border-radius: 50px;line-height: 50px;margin: 10px 0;text-align: center;font-weight: bold;}
+  .other_line{width: 48px;height: 1px;background: #D8D8D8;margin-top: 12px;}
+  </style>
+
+<link id="layuicss-laydate" rel="stylesheet" href="./登录页面设置_files/laydate.css" media="all"><link id="layuicss-layer" rel="stylesheet" href="./登录页面设置_files/layer.css" media="all"><link id="layuicss-skincodecss" rel="stylesheet" href="./登录页面设置_files/code.css" media="all"><style type="text/css">.resize-observer[data-v-8859cc6c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}.resize-observer[data-v-8859cc6c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><style type="text/css">.resize-observer[data-v-8859cc6c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}.resize-observer[data-v-8859cc6c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><style type="text/css">x-vue-echarts{display:flex;flex-direction:column;width:100%;height:100%;min-width:0}
+.vue-echarts-inner{flex-grow:1;min-width:0;width:auto!important;height:auto!important}
+</style></head>
+<body ap-style="">
+  <div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+      <div class="layui-card layui-col-md12">
+        <div class="layui-card-header">登录页面</div>
+        <div class="layui-card-body layui-col-md12 ng-scope" pad15="" ng-app="loginApp" ng-controller="loginCtrl" style="display: flex;">
+          <div class="dsn-phone">
+            <div class="dsn-phone-left"></div>
+            <div class="dsn-phone-center">
+              <div class="dsn-phone-top"></div>
+              <div class="dsn-phone-main">
+                <div id="editor">
+
+                  <div class="dsn-mod dsn-topbar dsn-mod-nohover" style="color:#fff;background:#333;">
+                    <div style="float:left;width:100%;font-size:12px">
+                      <div style="float:left;width:30%">&nbsp;<i class="fa fa-signal"></i> wechat <i class="fa fa-wifi"></i></div>
+                      <div style="float:left;text-align:center;width:40%">12:00</div>
+                      <div style="float:left;text-align:right;width:30%">100% <i class="fa fa-battery-full"></i>&nbsp;</div>
+                    </div>
+
+                    <div style="float:left;width:98%;margin:2px 1% 0 1%;">
+                      <div style="float:left;width:30%">&nbsp;</div>
+                      <div style="float:left;text-align:center;width:40%;font-size:16px;height:27px;line-height:27px">登录页面</div>
+                    </div>
+
+                  </div>
+
+                  <div id="editor-content">
+                    <input type="hidden" name="info[id]" value="174">
+                    <div style="width:100%;height: 100%;">
+
+                      <!-- s -->
+                      <div style="width:100%;height: 100%;">
+                        <div class="bg_div1" style="background:#FD4A46">
+
+                          <div ng-show="type==1" style="width: 300px;margin:0 auto;">
+                            <div class="title1 ng-binding" style="color: #000000;text-align: center;">
+                              欢迎使用商城系统
+                            </div>
+                            <!-- ngIf: data.subhead --><div class="subhead1 ng-binding ng-scope" ng-if="data.subhead" style="color: #A8B5D3;text-align: center;">
+                              推荐使用手机号验证码登录
+                            </div><!-- end ngIf: data.subhead -->
+                          </div>
+
+                          <div ng-show="type==2" style="width: 100px;height: 100px;margin: 0 auto;margin-top:20px;margin-bottom: 20px;border-radius: 6px;overflow: hidden;" class="ng-hide">
+                              <img src="./登录页面设置_files/logo.jpg" style="width: 100%;height: 100%;">
+                          </div>
+
+                          <div class="content_div1">
+                            <div class="card_div1" style="background:#FFFFFF">
+                              <div ng-show="type==2" class="ng-hide">
+                                <div class="title1 ng-binding" style="color: #000000;text-align: center;margin-top: 10px;font-size: 20px;">
+                                  欢迎使用商城系统
+                                </div>
+                                <!-- ngIf: data.subhead --><div class="subhead1 ng-binding ng-scope" ng-if="data.subhead" style="color: #A8B5D3;text-align: center;">
+                                  推荐使用手机号验证码登录
+                                </div><!-- end ngIf: data.subhead -->
+                              </div>
+
+                              <div class="tel1">
+                                请输入手机号码
+                              </div>
+                              <div class="tel1">
+                                <span>请输入验证码</span>
+                                <span class="code1" style="color:#0256FF">获取验证码</span>
+                              </div>
+
+                              <div style="line-height: 30px;font-size: 12px;overflow: hidden;">
+                                <div style="width: 12px;height: 12px;border-radius: 100%;background-color: #F5F7FA;border: 1px solid #D3D5D7;display: inline-block;"></div>
+                                <span style="color:#D8D8D8;" class="ng-binding">我已阅读并同意</span>
+                                <span style="color:#0256FF;">《无》</span>
+                              </div>
+
+                              <div class="btn1" ng-show="data.btntype==1" style="background:rgba(253,74,70);color: #FFFFFF;">
+                                登录
+                              </div>
+                              <div class="btn1 ng-hide" ng-show="data.btntype==2" style="background-color:#0256FF;color: #FFFFFF;">
+                                登录
+                              </div>
+
+                              <div style="line-height: 50px;float: 12px;overflow: hidden;">
+                                <span style="color: ;">注册账号</span>
+                              </div>
+
+                              <div style="width:210px;margin: 30px auto;">
+                                <div style="display: flex;width: 100%;">
+                                  <div class="other_line"></div>
+                                  <div style="margin: 0 10px;color: #D8D8D8;">其他登录方式</div>
+                                  <div class="other_line"></div>
+                                </div>
+                                <div style="overflow: hidden;padding:0 20px;width: 100%;margin-top: 30px;display: flex;justify-content: space-between">
+                                  <div style="text-align: center;">
+                                    <img src="./登录页面设置_files/login-weixin.png" style="width:50px;height:50px;">
+                                    <div style="font-size: 12px;margin-top: 5px;color: #888888" class="ng-binding">授权登录</div>
+                                  </div>
+                                   <div style="text-align: center;">
+                                     <img src="./登录页面设置_files/reg-tellogin.png" style="width:50px;height:50px;">
+                                     <div style="font-size: 12px;margin-top: 5px;color: #888888">手机号快捷登录</div>
+                                   </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- e -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dsn-phone-bottom"></div>
+            </div>
+            <div class="dsn-phone-right"></div>
+          </div>
+          
+          <div class="layui-form form-label-w10 layui-col-md12" lay-filter="">
+            <div class="layui-form-item">
+              <label class="layui-form-label">页面样式：</label>
+              <div class="layui-input-inline" style="display:flex;">
+                  <label><input type="radio" name="info[type]" value="1" title="样式一" ng-model="type" checked="" class="ng-pristine ng-untouched ng-valid"><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><div>样式一</div></div></label>
+                  <label><input type="radio" name="info[type]" value="2" title="样式二" ng-model="type" class="ng-pristine ng-untouched ng-valid"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>样式二</div></div></label>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">背景：</label>
+              <div class="layui-input-inline" style="width:300px">
+                <label><input type="radio" name="data[bgtype]" value="1" title="背景色" ng-model="data.bgtype" checked="" class="ng-pristine ng-untouched ng-valid"><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><div>背景色</div></div></label>
+                <label><input type="radio" name="data[bgtype]" value="2" title="背景图片" ng-model="data.bgtype" class="ng-pristine ng-untouched ng-valid"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>背景图片</div></div></label>
+              </div>
+            </div>
+            <div ng-show="data.bgtype==1">
+              <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-inline" style="width:134px">
+                  <input type="text" name="data[bgcolor]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.bgcolor">
+                </div>
+                <div class="colorpicker ng-pristine ng-untouched ng-valid ng-isolate-scope layui-inline" ng-model="data.bgcolor" id="_colorpicker175437166381385444926"><div class="layui-unselect layui-colorpicker"><span><span class="layui-colorpicker-trigger-span" lay-type="" style="background: #FD4A46"><i class="layui-icon layui-colorpicker-trigger-i layui-icon-down"></i></span></span></div></div>
+              </div>
+            </div>
+            <div ng-show="data.bgtype==2" class="ng-hide">
+              <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-inline" style="width:400px">
+                  <input type="text" name="data[bgimg]" id="bgimg" lay-vertype="tips" class="layui-input" value="https://v2.diandashop.com/static/admin/img/login/bg1.png" style="width: 300px;display: inline-block;">
+                  <button type="button" class="layui-btn layui-btn-primary" upload-input="bgimg" upload-preview="bgimgPreview" onclick="uploader(this)">上传图片</button>
+                  <!-- <div class="layui-form-mid layui-word-aux" style="margin-left:10px;">建议尺寸：640×640像素</div> -->
+                  <div id="bgimgPreview" style="float:left;padding-top:10px;clear: both;" class="ui-sortable">
+                    <div class="layui-imgbox" style="width:150px;"><div class="layui-imgbox-img"><img src="./登录页面设置_files/bg1.png"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div ng-show="type==2" class="ng-hide">
+              <div class="layui-form-item">
+                <label class="layui-form-label">LOGO</label>
+                <div class="layui-input-inline" style="width:400px">
+                  <input type="text" name="data[logo]" id="logo" lay-vertype="tips" class="layui-input" value="https://v2.diandashop.com/static/imgsrc/logo.jpg" style="width: 300px;display: inline-block;">
+                  <button type="button" class="layui-btn layui-btn-primary" upload-input="logo" upload-preview="logoPreview" onclick="uploader(this)">上传图片</button>
+                  <div class="layui-form-mid layui-word-aux">建议尺寸：100×100像素</div>
+                  <div id="logoPreview" style="float:left;padding-top:10px;clear: both;" class="ui-sortable">
+                    <div class="layui-imgbox" style="width:150px;"><div class="layui-imgbox-img"><img src="./登录页面设置_files/logo.jpg"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">卡片背景颜色：</label>
+              <div class="layui-input-inline" style="width:134px">
+                <input type="text" name="data[cardcolor]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.cardcolor">
+              </div>
+              <div class="colorpicker ng-pristine ng-untouched ng-valid ng-isolate-scope layui-inline" ng-model="data.cardcolor" id="_colorpicker175437166381598413169"><div class="layui-unselect layui-colorpicker"><span><span class="layui-colorpicker-trigger-span" lay-type="" style="background: #FFFFFF"><i class="layui-icon layui-colorpicker-trigger-i layui-icon-down"></i></span></span></div></div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">标题样式：</label>
+              <div class="layui-input-inline" style="width:300px">
+                <label><input type="radio" name="data[titletype]" value="left" title="居左" ng-model="data.titletype" class="ng-pristine ng-untouched ng-valid"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>居左</div></div></label>
+                <label><input type="radio" name="data[titletype]" value="center" title="居中" ng-model="data.titletype" checked="" class="ng-pristine ng-untouched ng-valid"><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><div>居中</div></div></label>
+                <label><input type="radio" name="data[titletype]" value="right" title="居右" ng-model="data.titletype" class="ng-pristine ng-untouched ng-valid"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>居右</div></div></label>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">标题内容：</label>
+              <div class="layui-input-inline" style="width:300px">
+                <input type="text" name="data[title]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.title" value="欢迎使用商城系统">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">标题文字颜色：</label>
+              <div class="layui-input-inline" style="width:134px">
+                <input type="text" name="data[titlecolor]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.titlecolor">
+              </div>
+              <div class="colorpicker ng-pristine ng-untouched ng-valid ng-isolate-scope layui-inline" ng-model="data.titlecolor" id="_colorpicker175437166381619668472"><div class="layui-unselect layui-colorpicker"><span><span class="layui-colorpicker-trigger-span" lay-type="" style="background: #000000"><i class="layui-icon layui-colorpicker-trigger-i layui-icon-down"></i></span></span></div></div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">副标题内容：</label>
+              <div class="layui-input-inline" style="width:300px">
+                <input type="text" name="data[subhead]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.subhead" value="推荐使用手机号验证码登录">
+              </div>
+              <div class="layui-form-mid layui-word-aux">为空不显示</div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">副标题文字颜色：</label>
+              <div class="layui-input-inline" style="width:134px">
+                <input type="text" name="data[subheadcolor]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.subheadcolor">
+              </div>
+              <div class="colorpicker ng-pristine ng-untouched ng-valid ng-isolate-scope layui-inline" ng-model="data.subheadcolor" id="_colorpicker175437166381625500089"><div class="layui-unselect layui-colorpicker"><span><span class="layui-colorpicker-trigger-span" lay-type="" style="background: #A8B5D3"><i class="layui-icon layui-colorpicker-trigger-i layui-icon-down"></i></span></span></div></div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">登录按钮颜色：</label>
+              <div class="layui-input-inline" style="width:300px">
+                <label><input type="radio" name="data[btntype]" value="1" title="跟随主题色" ng-model="data.btntype" checked="" class="ng-pristine ng-untouched ng-valid"><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><div>跟随主题色</div></div></label>
+                <label><input type="radio" name="data[btntype]" value="2" title="自定义" ng-model="data.btntype" class="ng-pristine ng-untouched ng-valid"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>自定义</div></div></label>
+              </div>
+            </div>
+            <div ng-show="data.btntype==2" class="ng-hide">
+              <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-inline" style="width:134px">
+                  <input type="text" name="data[btncolor]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.btncolor">
+                </div>
+                <div class="colorpicker ng-pristine ng-untouched ng-valid ng-isolate-scope layui-inline" ng-model="data.btncolor" id="_colorpicker175437166381773888502"><div class="layui-unselect layui-colorpicker"><span><span class="layui-colorpicker-trigger-span" lay-type="" style="background: #0256FF"><i class="layui-icon layui-colorpicker-trigger-i layui-icon-down"></i></span></span></div></div>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">登录按钮文字：</label>
+              <div class="layui-input-inline" style="width:134px">
+                <input type="text" name="data[btnwordcolor]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.btnwordcolor">
+              </div>
+              <div class="colorpicker ng-pristine ng-untouched ng-valid ng-isolate-scope layui-inline" ng-model="data.btnwordcolor" id="_colorpicker175437166381757779734"><div class="layui-unselect layui-colorpicker"><span><span class="layui-colorpicker-trigger-span" lay-type="" style="background: #FFFFFF"><i class="layui-icon layui-colorpicker-trigger-i layui-icon-down"></i></span></span></div></div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">验证码：</label>
+              <div class="layui-input-inline" style="width:134px">
+                <input type="text" name="data[codecolor]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.codecolor">
+              </div>
+              <div class="colorpicker ng-pristine ng-untouched ng-valid ng-isolate-scope layui-inline" ng-model="data.codecolor" id="_colorpicker175437166381786209105"><div class="layui-unselect layui-colorpicker"><span><span class="layui-colorpicker-trigger-span" lay-type="" style="background: #0256FF"><i class="layui-icon layui-colorpicker-trigger-i layui-icon-down"></i></span></span></div></div>
+            </div>
+            <!-- <div class="layui-form-item">
+              <label class="layui-form-label">注册提示文字：</label>
+              <div class="layui-input-inline" style="width:134px">
+                <input type="text" name="data[regtipcolor]" autocomplete="off" class="layui-input" ng-model="data.regtipcolor">
+              </div>
+              <div class="colorpicker" ng-model="data.regtipcolor"></div>
+            </div> -->
+            <div class="layui-form-item">
+              <label class="layui-form-label">注册文字/忘记密码：</label>
+              <div class="layui-input-inline" style="width:134px">
+                <input type="text" name="data[regpwdbtncolor]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.regpwdbtncolor">
+              </div>
+              <div class="colorpicker ng-pristine ng-untouched ng-valid ng-isolate-scope layui-inline" ng-model="data.regpwdbtncolor" id="_colorpicker17543716638189502617"><div class="layui-unselect layui-colorpicker"><span><span class="layui-colorpicker-trigger-span" lay-type="" style="background: #666666"><i class="layui-icon layui-colorpicker-trigger-i layui-icon-down"></i></span></span></div></div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">协议提示文字：</label>
+              <div class="layui-input-inline" style="width:300px">
+                <input type="text" name="data[xytipword]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.xytipword" value="我已阅读并同意">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">协议提示文字颜色：</label>
+              <div class="layui-input-inline" style="width:134px">
+                <input type="text" name="data[xytipcolor]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.xytipcolor">
+              </div>
+              <div class="colorpicker ng-pristine ng-untouched ng-valid ng-isolate-scope layui-inline" ng-model="data.xytipcolor" id="_colorpicker175437166381822584962"><div class="layui-unselect layui-colorpicker"><span><span class="layui-colorpicker-trigger-span" lay-type="" style="background: #D8D8D8"><i class="layui-icon layui-colorpicker-trigger-i layui-icon-down"></i></span></span></div></div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">协议文字颜色：</label>
+              <div class="layui-input-inline" style="width:134px">
+                <input type="text" name="data[xycolor]" autocomplete="off" class="layui-input ng-pristine ng-untouched ng-valid" ng-model="data.xycolor">
+              </div>
+              <div class="colorpicker ng-pristine ng-untouched ng-valid ng-isolate-scope layui-inline" ng-model="data.xycolor" id="_colorpicker175437166381859703823"><div class="layui-unselect layui-colorpicker"><span><span class="layui-colorpicker-trigger-span" lay-type="" style="background: #0256FF"><i class="layui-icon layui-colorpicker-trigger-i layui-icon-down"></i></span></span></div></div>
+            </div>
+            
+            <div class="layui-form-item">
+							<label class="layui-form-label"></label>
+              <div class="layui-input-block">
+                <button class="layui-btn" ng-click="save(0)">保存</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./登录页面设置_files/layui.all.js.下载"></script>
+<script type="text/javascript" src="./登录页面设置_files/flow.js.下载"></script>
+<script type="text/javascript" src="./登录页面设置_files/formSelects-v4.js.下载"></script>
+<script type="text/javascript" src="./登录页面设置_files/jquery-ui.min.js.下载"></script>
+<script type="text/javascript" src="./登录页面设置_files/ueditor.js.下载"></script>
+<script type="text/javascript" src="./登录页面设置_files/135editor.js.下载"></script>
+<script type="text/javascript" src="./登录页面设置_files/webuploader.js.下载"></script>
+<script type="text/javascript" src="./登录页面设置_files/qrcode.min.js.下载"></script>
+<script type="text/javascript" src="./登录页面设置_files/dianda.js.下载"></script>
+<script type="text/javascript" src="./登录页面设置_files/inputTags.js.下载"></script>
+
+<div id="NewsToolBox"></div>
+<script type="text/javascript">
+		// 解释文字浮层展示
+		$('.layui-text-popover').mouseenter(function(){
+			let pageHeight = $(window).height() + $(document).scrollTop();
+			let bottom = pageHeight - $(this).offset().top
+			let topNum = ($(this).offset().top - $(document).scrollTop()).toFixed(2);
+			let Height = $(this).find('.layui-textpopover-div').outerHeight();
+			$(this).find('.layui-textpopover-div').show()
+			let that = this;
+			setTimeout(function(){
+				if(topNum < (Height/2-15)){
+					$(that).find('.layui-textpopover-div').css({'top':-topNum+10+'px','opacity':1,'transition':'opacity .3s'})	
+				}else if(bottom < (Height/2-15)){
+					$(that).find('.layui-textpopover-div').css({'top': bottom-Height-10 +'px','opacity':1,'transition':'opacity .3s'})	
+				}else{
+					$(that).find('.layui-textpopover-div').css({'top':-(Height/2-15)+'px','opacity':1,'transition':'opacity .3s'})	
+				}
+			},100)
+		}) 
+		$('.layui-text-popover').mouseleave(function(){
+			$(this).find('.layui-textpopover-div').css({'opacity':0})	
+			$(this).find('.layui-textpopover-div').hide()
+		}) 
+		$('.layui-textpopover-div').mouseenter(function(){
+			$(this).find('.layui-textpopover-div').show()
+		})
+		$('.layui-textpopover-div').mouseleave(function(){
+			$(this).find('.layui-textpopover-div').css({'opacity':0})
+			$(this).find('.layui-textpopover-div').hide()
+		})
+		// 图片浮层展示 示例
+		$('.layui-popover').mouseenter(function(){
+			let pageHeight = $(window).height() + $(document).scrollTop();
+			let bottom = pageHeight - $(this).offset().top
+			let topNum = ($(this).offset().top - $(document).scrollTop()).toFixed(2);
+			let Height = $(this).find('.layui-popover-div').outerHeight();
+			$(this).find('.layui-popover-div').show()
+			let that = this;
+			setTimeout(function(){
+				if(topNum < (Height/2-15)){
+					$(that).find('.layui-popover-div').css({'top':-topNum+10+'px','opacity':1,'transition':'opacity .3s'})	
+				}else if(bottom < (Height/2-15)){
+					$(that).find('.layui-popover-div').css({'top': bottom-Height-10 +'px','opacity':1,'transition':'opacity .3s'})	
+				}else{
+					$(that).find('.layui-popover-div').css({'top':-(Height/2-15)+'px','opacity':1,'transition':'opacity .3s'})	
+				}
+			},100)
+		}) 
+		$('.layui-popover').mouseleave(function(){
+			$(this).find('.layui-popover-div').css({'opacity':0})	
+			$(this).find('.layui-popover-div').hide()
+		}) 
+    function copyText(text) {
+        var top = document.documentElement.scrollTop;
+        var textarea = document.createElement("textarea"); //创建input对象
+        var currentFocus = document.activeElement; //当前获得焦点的元素
+        var toolBoxwrap = document.getElementById('NewsToolBox'); //将文本框插入到NewsToolBox这个之后
+        toolBoxwrap.appendChild(textarea); //添加元素
+        textarea.value = text;
+        textarea.focus();
+        document.documentElement.scrollTop = top;
+        if (textarea.setSelectionRange) {
+            textarea.setSelectionRange(0, textarea.value.length); //获取光标起始位置到结束位置
+        } else {
+            textarea.select();
+        }
+        try {
+            var flag = document.execCommand("copy"); //执行复制
+        } catch (eo) {
+            var flag = false;
+        }
+        toolBoxwrap.removeChild(textarea); //删除元素
+        currentFocus.focus();
+        if(flag) layer.msg('复制成功');
+        return flag;
+    }
+		// 查看链接
+		function viewLink(path,url=''){
+			var pagepath = path;
+			if(!url){
+				var url = "https://v2.diandashop.com/h5/407.html#/"+pagepath+""; //拼接 H5 链接
+			}
+						var html = '';
+			html+='<div style="margin:20px">';
+			html+='	<div style="width:100%;margin:10px 0" id="urlqr"></div>';
+						html+='	<div style="line-height:25px;"><div><span style="width: 70px;display: inline-block;">链接地址：</span><button class="layui-btn layui-btn-xs layui-btn-primary" onclick="copyText(\''+url+'\')">复制</button></div><div>'+url+'</div></div>';
+			html+='	<div style="height:50px;line-height:25px;"><div><span style="width: 70px;display: inline-block;">页面路径：</span><button style="box-sizing: border-box;" class="layui-btn layui-btn-xs layui-btn-primary" onclick="copyText(\'/'+pagepath+'\')">复制</button></div><div>/'+pagepath+'</div></div>';
+			html+='</div>';
+			layer.open({type:1,'title':'查看链接',area:['500px','430px'],shadeClose:true,'content':html})
+			var qrcode = new QRCode('urlqr', {
+					text: 'your content',
+					width: 200,
+					height: 200,
+					colorDark : '#000000',
+					colorLight : '#ffffff',
+					correctLevel : QRCode.CorrectLevel.L
+				});
+				qrcode.clear();
+				qrcode.makeCode(url);
+		}
+		// 查看小程序码
+		function showwxqrcode(pagepath){
+			var index = layer.load();
+			$.post("/?s=/DesignerPage/getwxqrcode",{path:pagepath},function(res){
+				layer.close(index);
+				if(res.status==0){
+					layer.open({type:1,area:['300px','350px'],content:'<div style="margin:auto auto;text-align:center"><div style="color:red;width:280px;height:180px;margin-top:100px">'+res.msg+'</div><div style="height:25px;line-height:25px;">'+'/'+pagepath+'</div></div>',title:false,shadeClose:true})
+				}else{
+					layer.open({type:1,area:['300px','350px'],content:'<div style="margin:auto auto;text-align:center"><img src="'+res.url+'" style="margin-top:20px;max-width:280px;max-height:280px"/><div style="height:25px;line-height:25px;">'+'/'+pagepath+'</div></div>',title:false,shadeClose:true})
+				}
+			})
+		}
+</script>
+<!-------使用js导出excel文件--------->
+<script src="./登录页面设置_files/excel.js.下载"></script>
+<script src="./登录页面设置_files/excel(1).js.下载"></script>
+<script>
+
+    var excel = new Excel();
+    var excel_name = '';
+    excel.bind(function (data,title) {
+        var excel_field = JSON.parse('[]');
+        if(title && title!=undefined){
+            //接口返回的title
+            var excel_title = title;
+        }else{
+            //excel_field.php 配置的title
+            var excel_title = JSON.parse('[]');
+        }
+        if(!excel_title || excel_title.length<=0){
+            //上面两种都没有title,读取table表格cols中的title，同时filed也更新为table表格cols中的field
+            excel_title = [];
+            excel_field = [];
+            var cols = tableIns.config.cols;
+            cols.forEach(function (cols_item, cols_index) {
+                console.log(cols_item);
+                cols_item.forEach(function (cols_item2, cols_index2) {
+                    console.log(cols_item2);
+                    if(cols_item2.title){
+                        excel_title.push(cols_item2.title)
+                        excel_field.push(cols_item2.field)
+                    }
+                })
+            })
+        }
+        // if(!excel_title || excel_title.length<=0){
+        //     layer.msg('未设置标题');
+        //     return;
+        // }
+
+        // 设置表格内容
+        data.forEach(function (item, index) {
+            var _data = [];
+            excel_title.forEach(function (title, index2) {
+                var field = excel_field[index2];
+                if(item[field] && item[field]!=undefined){
+                    //有filed 匹配field
+                    var field_val = item[field];
+                    //是整数 长度为10 字段名包含time 判定为时间戳
+                    if(parseInt(field_val) == field_val && (field_val.toString()).length==10 && field.includes('time')){
+                        field_val = date('Y-m-d H:i:s',field_val);
+                    }
+                }else{
+                    //没有filed 根据顺序来
+                    var field_val = item[index2];
+                }
+                _data.push(field_val);
+            })
+            data[index] = _data;
+        });
+        // 设置表头内容
+        if(excel_title && excel_title.length>0){
+            data.unshift(excel_title);
+        }
+        // 应用表格样式
+        return this.withStyle(data);
+
+    }, excel_name+layui.util.toDateString(Date.now(), '_yyyyMMdd_HHmmss'));
+
+</script>
+  <script src="./登录页面设置_files/jscolor.js.下载"></script>
+  <script type="text/javascript" src="./登录页面设置_files/angular.min.js.下载"></script>
+  <script type="text/javascript" src="./登录页面设置_files/angular-ueditor.js.下载"></script>
+  <script>
+  var app = angular.module('loginApp', ['ng.ueditor']);
+  app.controller('loginCtrl', function($scope) {
+      $scope.type = 1;
+      $scope.data = {"logo":"https:\/\/v2.diandashop.com\/static\/imgsrc\/logo.jpg","bgtype":1,"bgcolor":"#FD4A46","bgimg":"https:\/\/v2.diandashop.com\/static\/admin\/img\/login\/bg1.png","cardcolor":"#FFFFFF","titletype":"center","title":"欢迎使用商城系统","titlecolor":"#000000","subhead":"推荐使用手机号验证码登录","subheadcolor":"#A8B5D3","btntype":1,"btncolor":"#0256FF","btnwordcolor":"#FFFFFF","codecolor":"#0256FF","regtipcolor":"#5E6066","regpwdbtncolor":"#666666","xytipword":"我已阅读并同意","xytipcolor":"#D8D8D8","xycolor":"#0256FF"};
+      $scope.chagnetype = function(type){
+        $scope.type = type;
+      },
+      $scope.save = function(param){
+
+        var field = new Object();
+        field.id   = 174;
+        field.type = $scope.type;
+        var data = $scope.data;
+        data.bgimg = $('#bgimg').val();
+        data.logo  = $('#logo').val();
+        
+        field.data = data;
+        console.log(field)
+        var loadlay = layer.open({type:3})
+        $.post("/?s=/DesignerLogin/save",{info:field},function(data){
+            layer.close(loadlay);
+            dialog(data.msg,data.status,data.url);
+        })
+      }
+  });
+  </script>
+  
+
+<div class="ap-ext ap-ext-pinduoduo_search_by_image"><div translate="no" class="ap-base ap-base--ltr ap-theme--dark"><div><div class="ap-toolbar ap-toolbar--left ap-toolbar--expand"><!----><div class="ap-toolbar__inner"><!----><!----></div></div></div><div><!----><div class="ap-sbi"><div class="ap-sbi-btn-search-wrapper" style="cursor: pointer; display: none;"><div class="ap-sbi-btn-search"><i class="ap-sbi-btn-search__icon ap-icon-search"></i><span class="ap-sbi-btn-search__txt">AliPrice</span></div><div class="ap-sbi-options"><div class="ap-sbi-options__label"><i class="ap-sbi-options__icon ap-icon-vertical-ellipsis"></i></div><!----></div></div><!----><div class="ap-sbi-aside"><!----><div class="ap-sbi-aside-btn-minimize" style="display: none;"><img src="https://v2.diandashop.com/?s=/DesignerLogin/index" class="ap-sbi-img-thumb"><i class="ap-sbi-aside-btn-minimize__icon ap-icon-chevron-right"></i></div><!----></div><!----></div></div><!----><!----><div></div><div class="ap-freightFee-modal"><!----></div><div><div class="ap-dlimgs-modal-wrapper"><!----></div><div class="ap-dlimgs-msg-modal"><!----></div><div><!----></div><div><div class="ap-dlimgs-export"><!----></div></div><div><div class="ap-dlimgs-rename-modal"><!----></div></div><!----></div><!----><div></div><!----><!----><!----></div></div><div class="ap-ext ap-ext-1688"><div translate="no" class="ap-base ap-base--ltr ap-theme--dark"><div><div class="ap-toolbar ap-toolbar--left ap-toolbar--collapse"><!----><div class="ap-toolbar__inner"><!----><!----><!----></div></div></div><!----><!----><div><!----><div class="ap-sbi"><div class="ap-sbi-btn-search-wrapper" style="cursor: pointer; display: none;"><div class="ap-sbi-btn-search"><i class="ap-sbi-btn-search__icon ap-icon-search"></i><span class="ap-sbi-btn-search__txt">AliPrice</span></div><div class="ap-sbi-options"><div class="ap-sbi-options__label"><i class="ap-sbi-options__icon ap-icon-vertical-ellipsis"></i></div><!----></div></div><!----><div class="ap-sbi-aside"><!----><div class="ap-sbi-aside-btn-minimize" style="display: none;"><img src="https://v2.diandashop.com/?s=/DesignerLogin/index" class="ap-sbi-img-thumb"><i class="ap-sbi-aside-btn-minimize__icon ap-icon-chevron-right"></i></div><!----></div><!----></div></div><!----><div><div class="ap-dlimgs-modal-wrapper"><!----></div><div class="ap-dlimgs-msg-modal"><!----></div><div><!----></div><div><div class="ap-dlimgs-export"><!----></div></div><div><div class="ap-dlimgs-rename-modal"><!----></div></div><!----></div><div supportplatforms="[object Object],[object Object]"><div><!----></div></div><!----><div></div><div></div><div></div><div></div><div></div><!----><div></div><div><!----></div><div></div><div></div><!----><!----><!----><div></div><div></div><div><!----></div><div></div><div class="ap-sub-favorite-modal" config="[object Object]"><!----></div><!----><!----></div></div></body></html>
